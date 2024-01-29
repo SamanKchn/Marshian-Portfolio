@@ -24,6 +24,7 @@
         darkMode: "class",
         theme: {
           fontFamily: {
+            worksans: ["Work Sans", "sans-serif"],
             sans: ["Roboto", "sans-serif"],
             body: ["Roboto", "sans-serif"],
             mono: ["ui-monospace", "monospace"],
@@ -35,12 +36,12 @@
       };
     </script>
   </head>
-  <body class="container mx-auto bg-white">
+  <body class="mx-auto bg-white font-worksans">
     <!--Main Navigation-->
-    <header class="w-full max-w-full">
+    <header class="">
       <!-- Navigation bar -->
       <nav
-        class="fixed top-0 flex w-[80vw] max-w-full flex-nowrap items-center justify-between bg-white py-2 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+        class="fixed z-10 flex w-full flex-nowrap items-center justify-between 2xl:px-[10%] bg-white py-2 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
         data-te-navbar-ref
       >
         <div class="flex w-full flex-wrap items-center justify-between px-3">
@@ -151,15 +152,43 @@
           </div>
         </div>
       </nav>
-      <!-- Navigation bar -->
       <!-- Hero section-->
-      <section></section>
-      <!-- Hero section-->
+      <section class="container mx-auto pt-[10rem]">
+        <div class="relative">
+          <div class="w-full">
+            <img
+              class="absolute translate50 rounded-xl w-[65%]"
+              src="images/hero.png"
+              alt="hero"
+            />
+          </div>
+          <div
+            class="absolute left-[7%] md:left-[1.5%] lg:left-[4%] xl:left-[2%] 2xl:left-[7%]"
+          >
+            <div
+              class="text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold mb-2 lg:mb-5"
+            >
+              <span class="text-black">Product</span>
+              <span class="text-white">Designer</span>
+            </div>
+            <p class="font-medium text-lg lg:text-xl xl:text-2xl text-black mb-4 lg:mb-16">
+              Arshia Nasiri (Marshian03)
+            </p>
+            <p
+              class="text-justify text-sm md:text-base lg:text-lg xl:text-xl text-black md:w-[28%] lg:w-[28%] xl:w-[30%] 2xl:w-[25%]"
+            >
+              I'm a passionate product designer with years of experience who
+              uses research, data, and thoughtful design to create delightful
+              products that scale.
+            </p>
+          </div>
+        </div>
+      </section>
     </header>
     <!--Main Navigation-->
 
     <!--Main layout-->
-    <main class="h-[5000px] bg-[#0000ff]"></main>
+    <main class="h"></main>
     <!--Main layout-->
 
     <!--Footer-->
