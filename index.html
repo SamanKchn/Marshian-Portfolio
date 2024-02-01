@@ -345,7 +345,7 @@
                 aria-labelledby="tabs-home-tab02"
                 data-te-tab-active
               >
-                <p class="text-black indent-5 text-justify">
+                <p class="text-black indent-5 text-justify px-5">
                   Process of designing and creating user interfaces for digital
                   products such as websites and applications in order to provide
                   an enjoyable, user-friendly experience for end users. process
@@ -363,7 +363,7 @@
                 role="tabpanel"
                 aria-labelledby="tabs-profile-tab02"
               >
-                <p class="text-black indent-5 text-justify">
+                <p class="text-black indent-5 text-justify px-5">
                   Process of designing and creating user interfaces for digital
                   products such as websites and applications in order to provide
                   an enjoyable, user-friendly experience for end users. process
@@ -381,7 +381,7 @@
                 role="tabpanel"
                 aria-labelledby="tabs-profile-tab02"
               >
-                <p class="text-black indent-5 text-justify">
+                <p class="text-black indent-5 text-justify px-5">
                   Process of designing and creating user interfaces for digital
                   products such as websites and applications in order to provide
                   an enjoyable, user-friendly experience for end users. process
@@ -399,7 +399,7 @@
                 role="tabpanel"
                 aria-labelledby="tabs-contact-tab02"
               >
-                <p class="text-black indent-5 text-justify">
+                <p class="text-black indent-5 text-justify px-5">
                   Process of designing and creating user interfaces for digital
                   products such as websites and applications in order to provide
                   an enjoyable, user-friendly experience for end users. process
@@ -417,17 +417,19 @@
       </div>
       <!-- Details -->
       <div>
-        <div class="my-[15rem] grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div class="my-[15rem] grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-0">
           <div class="mx-auto">
             <img src="images/personal.png" alt="Personal Photo" />
           </div>
-          <div>
+          <div
+            class="flex flex-col justify-between md:w-[70%] justify-self-center lg:justify-self-start"
+          >
             <div>
               <p class="font-medium text-[#017FBC]">DETAILS</p>
-              <p class="text-4xl font-semibold text-[#121127]">ABOUT ME</p>
+              <p class="text-4xl font-semibold text-[#121127] py-3">ABOUT ME</p>
             </div>
             <div>
-              <p class="indent-3 text-justify text-[#121127]/[72%]">
+              <p class="indent-3 text-justify text-[#121127]/[72%] py-10">
                 I am Marshian03, a UI/UX designer with over one year of
                 experience in Figma. I specialize in creating visually appealing
                 UI designs and effective user experiences. My skills include
@@ -437,8 +439,13 @@
                 the gap between your business goals and user needs.
               </p>
             </div>
-            <div>
-              <button>Download my CV</button>
+            <div class="text-center">
+              <a
+                class="inline-block rounded-xl bg-black px-6 pb-2 pt-2.5 text-base font-medium leading-normal text-white shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-neutral-800 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-neutral-900 dark:shadow-[0_4px_9px_-4px_#030202] dark:hover:bg-neutral-900 dark:hover:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:focus:bg-neutral-900 dark:focus:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:active:bg-neutral-900 dark:active:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)]"
+                href="#"
+                download="CV-File-Name"
+                >Download my CV</a
+              >
             </div>
           </div>
         </div>
