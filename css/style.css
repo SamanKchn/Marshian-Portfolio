@@ -7,6 +7,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .translate50top {
+    transform: translate(0%, 50%);
+  }
+}
+
 .swiper {
   width: 100%;
   height: 100%;

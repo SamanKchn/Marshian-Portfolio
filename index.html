@@ -194,9 +194,9 @@
     <!--Main Navigation-->
 
     <!--Main layout-->
-    <main class="container mx-auto px-3 pt-[50rem]">
+    <main class="pt-[50rem]">
       <!-- Services -->
-      <div>
+      <div class="container px-3 mx-auto">
         <div>
           <p class="text-[#017FBC] font-medium">MY SERVICES</p>
           <p class="text-[#121127] text-2xl md:text-4xl font-semibold">
@@ -402,7 +402,7 @@
         </div>
       </div>
       <!-- Details -->
-      <div>
+      <div class="container px-3 mx-auto">
         <div class="my-[15rem] grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-0">
           <div class="mx-auto">
             <img src="images/personal.png" alt="Personal Photo" />
@@ -437,8 +437,8 @@
         </div>
       </div>
       <!-- Projects -->
-      <div class="">
-        <div class="w-[85%] swiper mySwiper">
+      <div class="container px-3 mx-auto">
+        <div class="w-[90%] swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="images/project-1.png" alt="project-1" />
@@ -457,9 +457,53 @@
             </div>
           </div>
           <div
-            class="swiper-button-prev bg-black rounded-full text-white p-10 mr-5"
+            class="swiper-button-prev bg-black rounded-full text-white p-6"
+            style="
+              --swiper-navigation-size: 20px;
+              --swiper-navigation-sides-offset: 0px;
+            "
           ></div>
-          <div class="swiper-button-next"></div>
+          <div
+            class="swiper-button-next bg-black rounded-full text-white p-6"
+            style="
+              --swiper-navigation-size: 20px;
+              --swiper-navigation-sides-offset: 0px;
+            "
+          ></div>
+        </div>
+        <div class="text-center">
+          <a
+            class="inline-block rounded-xl bg-black my-10 px-20 pb-2 pt-2.5 text-base font-medium leading-normal text-white shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-neutral-800 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-neutral-900 dark:shadow-[0_4px_9px_-4px_#030202] dark:hover:bg-neutral-900 dark:hover:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:focus:bg-neutral-900 dark:focus:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:active:bg-neutral-900 dark:active:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)]"
+            href="#"
+            >More</a
+          >
+        </div>
+      </div>
+      <!-- Idea -->
+      <div>
+        <div class="">
+          <img
+            class="w-full h-full absolute"
+            src="images/Idea.gif"
+            alt="Idea"
+          />
+          <div class="relative w-[65%] mx-auto py-[5%] text-center">
+            <p class="text-white text-6xl">Got an idea?</p>
+            <p class="text-white py-20">
+              I'm here to help you turn it into a successful product. Book a
+              free consultation session and let's talk through your ideas - I'll
+              provide my expert perspective and advice.
+            </p>
+            <div class="text-center">
+              <a
+                href="#"
+                type="button"
+                class="inline-block rounded-xl bg-white px-20 pb-2 pt-2.5 text-base font-medium leading-normal text-black shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
+              >
+                Get in touch
+              </a>
+            </div>
+          </div>
         </div>
         <div class="h-[5000px]"></div>
       </div>
