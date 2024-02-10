@@ -24,6 +24,7 @@
         darkMode: "class",
         theme: {
           fontFamily: {
+            worksans: ["Work Sans", "sans-serif"],
             sans: ["Roboto", "sans-serif"],
             body: ["Roboto", "sans-serif"],
             mono: ["ui-monospace", "monospace"],
@@ -35,19 +36,349 @@
       };
     </script>
   </head>
-  <body>
+  <body class="mx-auto bg-white font-worksans">
     <!--Main Navigation-->
-    <header></header>
+    <header class="">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed z-10 flex w-full flex-nowrap items-center justify-between 2xl:px-[10%] bg-white/60 backdrop-blur-md backdrop-opacity-90 py-2 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+        data-te-navbar-ref
+      >
+        <div class="flex w-full flex-wrap items-center justify-between px-5">
+          <div class="ml-2">
+            <a class="text-xl text-neutral-800 dark:text-neutral-200" href="#"
+              >Marshian03</a
+            >
+          </div>
+          <!-- Hamburger button for mobile view -->
+          <button
+            class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            type="button"
+            data-te-collapse-init
+            data-te-target="#navbarSupportedContent14"
+            aria-controls="navbarSupportedContent14"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- Hamburger icon -->
+            <span class="[&>svg]:w-7">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-7 w-7"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <!-- Collapsible navbar container -->
+          <div
+            class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+            id="navbarSupportedContent14"
+            data-te-collapse-item
+          >
+            <!-- Left links -->
+            <ul
+              class="list-style-none mx-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
+              data-te-navbar-nav-ref
+            >
+              <!-- Home link -->
+              <li
+                class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
+                data-te-nav-item-ref
+              >
+                <a
+                  class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  aria-current="page"
+                  href="#"
+                  data-te-nav-link-ref
+                  >Home</a
+                >
+              </li>
+              <!-- Projects -->
+              <li
+                class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                data-te-nav-item-ref
+              >
+                <a
+                  class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="#"
+                  data-te-nav-link-ref
+                  >Projects</a
+                >
+              </li>
+              <!-- Contact Us -->
+              <li
+                class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                data-te-nav-item-ref
+              >
+                <a
+                  class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="#"
+                  data-te-nav-link-ref
+                  >Contact Us</a
+                >
+              </li>
+              <!-- Our Team -->
+              <li
+                class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                data-te-nav-item-ref
+              >
+                <a
+                  class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="#"
+                  data-te-nav-link-ref
+                  >Our Team</a
+                >
+              </li>
+            </ul>
+            <div class="lg:pr-2">
+              <div class="relative flex w-full flex-wrap items-stretch">
+                <!--Work with us button-->
+                <button
+                  type="button"
+                  class="rounded-md bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-neutral-800 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-neutral-900 dark:shadow-[0_4px_9px_-4px_#030202] dark:hover:bg-neutral-900 dark:hover:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:focus:bg-neutral-900 dark:focus:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:active:bg-neutral-900 dark:active:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] capitalize"
+                >
+                  Work with us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!--Main Navigation-->
 
     <!--Main layout-->
-    <main></main>
+    <main class="container mx-auto pt-[10rem]">
+      <p>Lorem</p>
+    </main>
     <!--Main layout-->
-
     <!--Footer-->
-    <footer></footer>
+    <footer
+      class="flex flex-col items-center bg-black text-center text-white mt-20"
+    >
+      <div class="container px-6 pt-10 pb-20">
+        <div class="mb-6 flex flex-col md:flex-row gap-y-3 justify-around">
+          <div>
+            <a
+              class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
+              href="#"
+              data-te-nav-link-ref
+              >Home</a
+            >
+          </div>
+          <div>
+            <a
+              class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
+              href="#"
+              data-te-nav-link-ref
+              >Projects</a
+            >
+          </div>
+          <div>
+            <a
+              class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
+              href="#"
+              data-te-nav-link-ref
+              >Our Team</a
+            >
+          </div>
+          <div>
+            <a
+              class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
+              href="#"
+              data-te-nav-link-ref
+              >Contact Us</a
+            >
+          </div>
+          <div>
+            <a
+              class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
+              href="#"
+              data-te-nav-link-ref
+              >About Me</a
+            >
+          </div>
+          <div>
+            <a
+              class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
+              href="#"
+              data-te-nav-link-ref
+              >Work with Us</a
+            >
+          </div>
+          <div>
+            <a
+              class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
+              href="#"
+              data-te-nav-link-ref
+              >Join our Team</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container px-6 pt-6">
+        <div class="mb-6 flex justify-center gap-8">
+          <a
+            href="#!"
+            type="button"
+            class="mx-1 rounded-full transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M17.0365 0H6.97548C2.6053 0 0 2.604 0 6.972V17.016C0 21.396 2.6053 24 6.97548 24H17.0245C21.3947 24 24 21.396 24 17.028V6.972C24.012 2.604 21.4067 0 17.0365 0ZM12.006 16.656C9.4367 16.656 7.34766 14.568 7.34766 12C7.34766 9.432 9.4367 7.344 12.006 7.344C14.5753 7.344 16.6643 9.432 16.6643 12C16.6643 14.568 14.5753 16.656 12.006 16.656ZM19.1135 5.856C19.0535 6 18.9695 6.132 18.8614 6.252C18.7413 6.36 18.6093 6.444 18.4652 6.504C18.3211 6.564 18.1651 6.6 18.009 6.6C17.6848 6.6 17.3847 6.48 17.1565 6.252C17.0485 6.132 16.9645 6 16.9044 5.856C16.8444 5.712 16.8084 5.556 16.8084 5.4C16.8084 5.244 16.8444 5.088 16.9044 4.944C16.9645 4.788 17.0485 4.668 17.1565 4.548C17.4327 4.272 17.8529 4.14 18.2371 4.224C18.3211 4.236 18.3932 4.26 18.4652 4.296C18.5372 4.32 18.6093 4.356 18.6813 4.404C18.7413 4.44 18.8014 4.5 18.8614 4.548C18.9695 4.668 19.0535 4.788 19.1135 4.944C19.1736 5.088 19.2096 5.244 19.2096 5.4C19.2096 5.556 19.1736 5.712 19.1135 5.856Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="#!"
+            type="button"
+            class="mx-1 rounded-full transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.4025 22.7034C17.4385 22.8955 17.3305 23.0996 17.1504 23.1716C15.7938 23.7119 14.3051 24 12.7684 24C10.1152 24 7.66603 23.1476 5.68512 21.6829C5.51705 21.5628 5.46907 21.3227 5.57712 21.1426C6.23742 19.966 8.81855 16.1841 14.5212 14.0711C14.7373 13.987 14.9774 14.0951 15.0494 14.3112C16.4781 18.1411 17.1504 21.3827 17.4025 22.7034Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24.5328 14.2632C23.9806 17.2166 22.3238 19.7859 20.0067 21.5388C19.7546 21.7309 19.3944 21.5868 19.3344 21.2866C19.0823 19.99 18.47 17.1926 17.2935 13.8669C17.2094 13.6148 17.3775 13.3387 17.6417 13.3027C20.631 12.9425 23.2482 13.5188 24.2327 13.7829C24.4368 13.8549 24.5688 14.0591 24.5328 14.2632Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24.2574 11.7777C23.0328 11.5616 19.9113 11.1054 16.7179 11.4536C16.5258 11.4776 16.3577 11.3695 16.2737 11.1894C16.2256 11.0814 16.1897 10.9733 16.1416 10.8653C15.9495 10.4211 15.7454 9.96483 15.5414 9.52061C15.4333 9.3045 15.5413 9.04036 15.7574 8.94431C19.119 7.49159 20.9918 5.61865 21.7242 4.77824C21.9042 4.57413 22.2164 4.58616 22.3845 4.80227C23.7651 6.63919 24.6175 8.88428 24.7496 11.3095C24.7616 11.6096 24.5215 11.8258 24.2574 11.7777Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.4753 3.33766C19.851 4.09404 18.0982 5.89491 14.7727 7.21557C14.5806 7.29961 14.3525 7.21556 14.2444 7.02347C12.7077 4.23808 11.0749 1.89692 10.3186 0.840397C10.1385 0.588271 10.2826 0.228106 10.5827 0.180082C11.2791 0.0600226 12.0114 0 12.7557 0C15.6611 0 18.3383 1.0325 20.4153 2.76136C20.5954 2.89343 20.6193 3.15757 20.4753 3.33766Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.567 8.19996C7.01691 9.34053 2.99501 9.49662 1.53034 9.52063C1.25421 9.52063 1.05016 9.25649 1.12219 8.99236C1.98659 5.63069 4.29163 2.8213 7.32902 1.27253C7.50911 1.17648 7.73721 1.23649 7.85727 1.40458C8.48155 2.26901 10.1743 4.70624 11.8311 7.57567C11.9632 7.81579 11.8431 8.12793 11.567 8.19996Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.848 11.5139C13.956 11.742 13.824 12.0181 13.5839 12.1021C8.26546 13.819 5.08399 18.0811 4.12355 19.5459C3.96748 19.786 3.63132 19.798 3.45124 19.5819C1.77047 17.5169 0.75 15.1517 0.75 12.2822V12.0661C0.75 11.826 0.942071 11.6339 1.18218 11.6459C2.69488 11.7059 7.62916 11.5018 12.7555 10.0251C12.9476 9.96507 13.1637 10.0611 13.2477 10.2412C13.4518 10.6614 13.6559 11.0816 13.848 11.5139Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="#!"
+            type="button"
+            class="mx-1 rounded-full transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 0C5.652 0 0.5 5.376 0.5 12C0.5 18.624 5.652 24 12 24C18.348 24 23.5 18.624 23.5 12C23.5 5.376 18.348 0 12 0ZM16.6 12C16.6 13.32 15.565 14.4 14.3 14.4C13.035 14.4 12 13.32 12 12V14.4V16.8C12 18.12 10.965 19.2 9.7 19.2C8.435 19.2 7.4 18.12 7.4 16.8C7.4 15.48 8.435 14.4 9.7 14.4C8.435 14.4 7.4 13.32 7.4 12C7.4 10.68 8.435 9.6 9.7 9.6C8.435 9.6 7.4 8.52 7.4 7.2C7.4 5.88 8.435 4.8 9.7 4.8H12H14.3C15.565 4.8 16.6 5.88 16.6 7.2C16.6 8.52 15.565 9.6 14.3 9.6C15.565 9.6 16.6 10.68 16.6 12Z"
+                fill="white"
+              />
+              <path
+                d="M12 12C12 10.68 13.035 9.60001 14.3 9.60001H12V12Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="#!"
+            type="button"
+            class="mx-1 rounded-full transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M24.25 12.0006C24.2496 9.70744 23.5922 7.46238 22.3556 5.53122C21.1189 3.60006 19.3548 2.06368 17.2721 1.10396C15.1894 0.144245 12.8754 -0.198622 10.6038 0.115955C8.33235 0.430531 6.19854 1.38938 4.45505 2.87898C2.71156 4.36858 1.43139 6.32656 0.766104 8.52111C0.100815 10.7157 0.0782639 13.0549 0.701122 15.2619C1.32398 17.4688 2.56616 19.4511 4.28061 20.9741C5.99506 22.497 8.10999 23.4968 10.375 23.8551V15.4694H7.3285V12.0006H10.375V9.35687C10.375 6.34937 12.1667 4.68812 14.9072 4.68812C15.8073 4.7006 16.7051 4.77881 17.5938 4.92212V7.87562H16.0802C15.8223 7.84137 15.56 7.86559 15.3128 7.94649C15.0655 8.0274 14.8396 8.16291 14.6518 8.34299C14.464 8.52307 14.3191 8.74309 14.228 8.98676C14.1368 9.23043 14.1016 9.4915 14.125 9.75062V12.0006H17.4535L16.921 15.4694H14.125V23.8551C16.9478 23.4086 19.5186 21.9692 21.3748 19.796C23.2309 17.6228 24.2505 14.8586 24.25 12.0006Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="#!"
+            type="button"
+            class="mx-1 rounded-full transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 0.299988C5.4 0.299988 0 5.69999 0 12.3C0 17.625 3.45 22.125 8.175 23.7C8.775 23.775 9 23.475 9 23.1C9 22.8 9 22.05 9 21.075C5.625 21.825 4.95 19.5 4.95 19.5C4.425 18.15 3.6 17.775 3.6 17.775C2.475 17.025 3.675 17.025 3.675 17.025C4.875 17.1 5.55 18.225 5.55 18.225C6.6 20.025 8.325 19.5 9.075 19.2C9.15 18.45 9.525 17.925 9.825 17.625C7.125 17.325 4.35 16.275 4.35 11.7C4.35 10.425 4.8 9.29999 5.55 8.47499C5.4 8.17499 5.025 6.97499 5.7 5.32499C5.7 5.32499 6.675 5.02499 9 6.52499C9.975 6.22499 10.95 6.14999 12 6.14999C13.05 6.14999 14.025 6.29999 15 6.52499C17.325 4.94999 18.3 5.24999 18.3 5.24999C18.975 6.89999 18.525 8.09999 18.45 8.39999C19.2 9.22499 19.65 10.275 19.65 11.625C19.65 16.2 16.875 17.25 14.175 17.55C14.625 17.925 15 18.675 15 19.8C15 21.375 15 22.725 15 23.1C15 23.4 15.225 23.775 15.825 23.7C20.55 22.125 24 17.625 24 12.3C24 5.69999 18.6 0.299988 12 0.299988Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!--Copyright section-->
+      <div class="w-full pt-4 pb-10 text-center bg-black text-[#5C5C5C]">
+        © 2023 Marshian03, Inc. All rights reserved
+      </div>
+    </footer>
     <!--Footer-->
     <!-- External Script -->
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
