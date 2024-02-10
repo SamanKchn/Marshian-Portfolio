@@ -48,7 +48,7 @@
         class="fixed z-10 flex w-full flex-nowrap items-center justify-between 2xl:px-[10%] bg-white py-2 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
         data-te-navbar-ref
       >
-        <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="flex w-full flex-wrap items-center justify-between px-5">
           <div class="ml-2">
             <a class="text-xl text-neutral-800 dark:text-neutral-200" href="#"
               >Marshian03</a
@@ -161,27 +161,27 @@
         <div class="relative">
           <div class="w-full">
             <img
-              class="absolute translate50 rounded-xl w-[65%]"
+              class="absolute translate50 rounded-xl w-full md:w-[65%]"
               src="images/hero.png"
               alt="hero"
             />
           </div>
           <div
-            class="absolute left-[7%] md:left-[1.5%] lg:left-[4%] xl:left-[2%] 2xl:left-[7%]"
+            class="absolute px-5 md:px-0 md:left-[1.5%] lg:left-[4%] xl:left-[2%] 2xl:left-[7%]"
           >
             <div
               class="text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold mb-2 lg:mb-5"
             >
-              <span class="text-black">Product</span>
+              <span class="text-white md:text-black">Product</span>
               <span class="text-white">Designer</span>
             </div>
             <p
-              class="font-medium text-lg lg:text-xl xl:text-2xl text-black mb-4 lg:mb-16"
+              class="font-medium text-lg lg:text-xl xl:text-2xl text-white md:text-black mb-4 lg:mb-16"
             >
               Arshia Nasiri (Marshian03)
             </p>
             <p
-              class="text-justify text-sm md:text-base lg:text-lg xl:text-xl text-black md:w-[28%] lg:w-[28%] xl:w-[30%] 2xl:w-[25%]"
+              class="text-justify text-sm md:text-base lg:text-lg xl:text-xl text-white md:text-black md:w-[28%] lg:w-[28%] xl:w-[30%] 2xl:w-[25%]"
             >
               I'm a passionate product designer with years of experience who
               uses research, data, and thoughtful design to create delightful
@@ -194,9 +194,9 @@
     <!--Main Navigation-->
 
     <!--Main layout-->
-    <main class="pt-[50rem]">
+    <main class="pt-[25rem] md:pt-[50rem]">
       <!-- Services -->
-      <div class="container px-3 mx-auto">
+      <div class="container px-5 mx-auto">
         <div>
           <p class="text-[#017FBC] font-medium">MY SERVICES</p>
           <p class="text-[#121127] text-2xl md:text-4xl font-semibold">
@@ -349,7 +349,7 @@
                 aria-labelledby="tabs-home-tab02"
                 data-te-tab-active
               >
-                <p class="text-black indent-5 text-justify px-5">
+                <p class="text-black indent-5 text-justify md:px-5">
                   Process of designing and creating user interfaces for digital
                   products such as websites and applications in order to provide
                   an enjoyable, user-friendly experience for end users. process
@@ -367,7 +367,7 @@
                 role="tabpanel"
                 aria-labelledby="tabs-profile-tab02"
               >
-                <p class="text-black indent-5 text-justify px-5">
+                <p class="text-black indent-5 text-justify md:px-5">
                   Understand user behaviors, needs, and motivations in order to
                   create intuitive and seamless digital experience that drive
                   user engagement and satisfaction.
@@ -379,7 +379,7 @@
                 role="tabpanel"
                 aria-labelledby="tabs-profile-tab02"
               >
-                <p class="text-black indent-5 text-justify px-5">
+                <p class="text-black indent-5 text-justify md:px-5">
                   Creating low and high fidelity wireframes and interactive
                   prototypes to visualize and test digital product designs,
                   interactions and user flows before development.
@@ -391,7 +391,7 @@
                 role="tabpanel"
                 aria-labelledby="tabs-contact-tab02"
               >
-                <p class="text-black indent-5 text-justify px-5">
+                <p class="text-black indent-5 text-justify md:px-5">
                   Providing helpful support to resolve customer issues and
                   inquiries in a timely manner through email, call, or online
                   chat in order to deliver satisfying experience.
@@ -402,7 +402,7 @@
         </div>
       </div>
       <!-- Details -->
-      <div class="container px-3 mx-auto">
+      <div class="container px-5 mx-auto">
         <div class="my-[15rem] grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-0">
           <div class="mx-auto">
             <img src="images/personal.png" alt="Personal Photo" />
@@ -437,7 +437,7 @@
         </div>
       </div>
       <!-- Projects -->
-      <div class="container px-3 mx-auto">
+      <div class="container px-5 mx-auto">
         <div class="w-[90%] swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -508,14 +508,290 @@
           </div>
         </div>
       </div>
-      <!-- Idea -->
-      <div class="container px-3 mx-auto"></div>
+      <!-- Recommendations -->
+      <div class="container px-5 md:px-16 mx-auto my-[10rem]">
+        <ul
+          class="mb-5 flex items-center justify-around list-none flex-col lg:flex-row flex-wrap border-b-0 pl-0"
+          role="tablist"
+          data-te-nav-ref
+        >
+          <li role="presentation" class="text-center">
+            <a
+              href="#tabs-home01"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 md:hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+              data-te-toggle="pill"
+              data-te-target="#tabs-home01"
+              data-te-nav-active
+              role="tab"
+              aria-controls="tabs-home01"
+              aria-selected="true"
+            >
+              <img src="images/recommendation1.png" alt="recommendation1" />
+            </a>
+          </li>
+
+          <li role="presentation" class="text-center">
+            <a
+              href="#tabs-messages01"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 md:hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+              data-te-toggle="pill"
+              data-te-target="#tabs-messages01"
+              role="tab"
+              aria-controls="tabs-messages01"
+              aria-selected="false"
+              ><img src="images/recommendation2.png" alt="recommendation2"
+            /></a>
+          </li>
+
+          <li role="presentation" class="text-center">
+            <a
+              href="#tabs-messages03"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 md:hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+              data-te-toggle="pill"
+              data-te-target="#tabs-messages03"
+              role="tab"
+              aria-controls="tabs-messages03"
+              aria-selected="false"
+              ><img src="images/recommendation3.png" alt="recommendation3"
+            /></a>
+          </li>
+          <li role="presentation" class="text-center">
+            <a
+              href="#tabs-messages04"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 md:hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+              data-te-toggle="pill"
+              data-te-target="#tabs-messages04"
+              role="tab"
+              aria-controls="tabs-messages04"
+              aria-selected="false"
+              ><img src="images/recommendation4.png" alt="recommendation4"
+            /></a>
+          </li>
+          <li role="presentation" class="text-center">
+            <a
+              href="#tabs-messages05"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 md:hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+              data-te-toggle="pill"
+              data-te-target="#tabs-messages05"
+              role="tab"
+              aria-controls="tabs-messages05"
+              aria-selected="false"
+              ><img src="images/recommendation5.png" alt="recommendation5"
+            /></a>
+          </li>
+          <li role="presentation" class="text-center">
+            <a
+              href="#tabs-messages06"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 md:hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+              data-te-toggle="pill"
+              data-te-target="#tabs-messages06"
+              role="tab"
+              aria-controls="tabs-messages06"
+              aria-selected="false"
+              ><img src="images/recommendation6.png" alt="recommendation6.png"
+            /></a>
+          </li>
+        </ul>
+
+        <!--Tabs content-->
+        <div class="mb-6 md:w-[70%] mx-auto my-20">
+          <div
+            class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-home01"
+            role="tabpanel"
+            aria-labelledby="tabs-home-tab01"
+            data-te-tab-active
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-5">
+              <div>
+                <div class="text-center">
+                  <img
+                    src="images/person1.png"
+                    class="mx-auto mb-4 rounded-full"
+                    alt="Avatar"
+                  />
+                  <h5 class="mb-2 text-lg font-medium leading-tight">
+                    John Doe
+                  </h5>
+                  <p class="text-neutral-500 dark:text-neutral-400">
+                    Web designer
+                  </p>
+                </div>
+              </div>
+              <div class="lg:col-span-2 text-lg">
+                <p class="text-center md:text-left">
+                  “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-messages01"
+            role="tabpanel"
+            aria-labelledby="tabs-messages-tab01"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-5">
+              <div>
+                <div class="text-center">
+                  <img
+                    src="images/person1.png"
+                    class="mx-auto mb-4 rounded-full"
+                    alt="Avatar"
+                  />
+                  <h5 class="mb-2 text-lg font-medium leading-tight">
+                    John Doe
+                  </h5>
+                  <p class="text-neutral-500 dark:text-neutral-400">
+                    Web designer
+                  </p>
+                </div>
+              </div>
+              <div class="lg:col-span-2 text-lg">
+                <p class="text-center md:text-left">
+                  “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-messages03"
+            role="tabpanel"
+            aria-labelledby="tabs-messages-tab03"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-5">
+              <div>
+                <div class="text-center">
+                  <img
+                    src="images/person1.png"
+                    class="mx-auto mb-4 rounded-full"
+                    alt="Avatar"
+                  />
+                  <h5 class="mb-2 text-lg font-medium leading-tight">
+                    John Doe
+                  </h5>
+                  <p class="text-neutral-500 dark:text-neutral-400">
+                    Web designer
+                  </p>
+                </div>
+              </div>
+              <div class="lg:col-span-2 text-lg">
+                <p class="text-center md:text-left">
+                  “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-messages04"
+            role="tabpanel"
+            aria-labelledby="tabs-messages-tab04"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-5">
+              <div>
+                <div class="text-center">
+                  <img
+                    src="images/person1.png"
+                    class="mx-auto mb-4 rounded-full"
+                    alt="Avatar"
+                  />
+                  <h5 class="mb-2 text-lg font-medium leading-tight">
+                    John Doe
+                  </h5>
+                  <p class="text-neutral-500 dark:text-neutral-400">
+                    Web designer
+                  </p>
+                </div>
+              </div>
+              <div class="lg:col-span-2 text-lg">
+                <p class="text-center md:text-left">
+                  “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-messages05"
+            role="tabpanel"
+            aria-labelledby="tabs-messages-tab05"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-5">
+              <div>
+                <div class="text-center">
+                  <img
+                    src="images/person1.png"
+                    class="mx-auto mb-4 rounded-full"
+                    alt="Avatar"
+                  />
+                  <h5 class="mb-2 text-lg font-medium leading-tight">
+                    John Doe
+                  </h5>
+                  <p class="text-neutral-500 dark:text-neutral-400">
+                    Web designer
+                  </p>
+                </div>
+              </div>
+              <div class="lg:col-span-2 text-lg">
+                <p class="text-center md:text-left">
+                  “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            id="tabs-messages06"
+            role="tabpanel"
+            aria-labelledby="tabs-messages-tab06"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-y-5">
+              <div>
+                <div class="text-center">
+                  <img
+                    src="images/person1.png"
+                    class="mx-auto mb-4 rounded-full"
+                    alt="Avatar"
+                  />
+                  <h5 class="mb-2 text-lg font-medium leading-tight">
+                    John Doe
+                  </h5>
+                  <p class="text-neutral-500 dark:text-neutral-400">
+                    Web designer
+                  </p>
+                </div>
+              </div>
+              <div class="lg:col-span-2 text-lg">
+                <p class="text-center md:text-left">
+                  “Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!--Main layout-->
     <!--Footer-->
-    <footer class="flex flex-col items-center bg-black text-center text-white">
+    <footer
+      class="flex flex-col items-center bg-black text-center text-white mt-20"
+    >
       <div class="container px-6 pt-10 pb-20">
-        <div class="mb-6 flex justify-around">
+        <div class="mb-6 flex flex-col md:flex-row gap-y-3 justify-around">
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
@@ -575,7 +851,7 @@
         </div>
       </div>
       <div class="container px-6 pt-6">
-        <div class="mb-6 flex justify-center gap-10">
+        <div class="mb-6 flex justify-center gap-8">
           <a
             href="#!"
             type="button"
