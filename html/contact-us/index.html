@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,7 +38,7 @@
   </head>
   <body class="mx-auto bg-white font-worksans">
     <!--Main Navigation-->
-    <header class="">
+    <header>
       <!-- Navigation bar -->
       <nav
         class="fixed z-10 flex w-full flex-nowrap items-center justify-between 2xl:px-[10%] bg-white/60 backdrop-blur-md backdrop-opacity-90 py-2 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
@@ -94,9 +94,9 @@
                 data-te-nav-item-ref
               >
                 <a
-                  class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
-                  href="#"
+                  href="../../index.html"
                   data-te-nav-link-ref
                   >Home</a
                 >
@@ -108,7 +108,7 @@
               >
                 <a
                   class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  href="#"
+                  href="../projects/"
                   data-te-nav-link-ref
                   >Projects</a
                 >
@@ -119,7 +119,7 @@
                 data-te-nav-item-ref
               >
                 <a
-                  class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   href="#"
                   data-te-nav-link-ref
                   >Contact Us</a
@@ -132,7 +132,7 @@
               >
                 <a
                   class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  href="#"
+                  href="../our-team/"
                   data-te-nav-link-ref
                   >Our Team</a
                 >
@@ -141,12 +141,13 @@
             <div class="lg:pr-2">
               <div class="relative flex w-full flex-wrap items-stretch">
                 <!--Work with us button-->
-                <button
+                <a
+                  href="../work-with-us/"
                   type="button"
                   class="rounded-md bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-neutral-800 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-neutral-900 dark:shadow-[0_4px_9px_-4px_#030202] dark:hover:bg-neutral-900 dark:hover:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:focus:bg-neutral-900 dark:focus:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:active:bg-neutral-900 dark:active:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] capitalize"
                 >
                   Work with us
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -157,7 +158,172 @@
 
     <!--Main layout-->
     <main class="container mx-auto pt-[10rem]">
-      <p>Contact Us</p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-3 md:mx-5 lg:mx-20"
+      >
+        <div class="relative col-span-1 mx-auto">
+          <img
+            class="relative rounded-xl h-full object-cover"
+            src="../../images/contact-us.png"
+            alt="contact-us"
+          />
+          <div class="absolute top-[20%] left-[15%] text-white">
+            <div>
+              <p class="text-3xl">Contact Me</p>
+            </div>
+            <div>
+              <p class="py-5">Get in touch with me via the following:</p>
+            </div>
+            <div class="pt-12 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 6C1 4.34315 2.34315 3 4 3H20C21.6569 3 23 4.34315 23 6V18C23 19.6569 21.6569 21 20 21H4C2.34315 21 1 19.6569 1 18V6ZM4 5C3.44772 5 3 5.44772 3 6V7.43381L12 12.8338L21 7.43381V6C21 5.44772 20.5523 5 20 5H4ZM21 9.76619L13.029 14.5488C12.3956 14.9288 11.6044 14.9288 10.971 14.5488L3 9.76619V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V9.76619Z"
+                  fill="white"
+                />
+              </svg>
+              <a class="ml-2" href="mailto:Marshian03@gmail.com"
+                >Marshian03@gmail.com</a
+              >
+            </div>
+            <div class="py-3 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.47541 3.72706C4.54817 2.22519 6.74809 2.13493 7.94027 3.54388L9.84691 5.79717C10.3999 6.45077 10.4756 7.38389 10.0351 8.11805L8.56633 10.566C8.68408 10.7587 8.84362 10.9886 9.04773 11.2509C9.4117 11.7185 9.87676 12.2377 10.3954 12.7564C11.2688 13.6298 12.2466 14.4545 13.0883 15.0118L15.4886 13.5716C16.2228 13.1311 17.1559 13.2067 17.8095 13.7598L20.1716 15.7584C21.5253 16.9039 21.4386 19.0177 19.9955 20.0485C17.7702 21.638 14.7792 22.0161 12.3288 20.5205C10.6395 19.4895 8.56944 18.0339 6.71755 16.182C5.00067 14.4652 3.74884 12.6854 2.87574 11.2049C1.43745 8.76606 1.94286 5.87263 3.47541 3.72706ZM6.4135 4.83576C6.06354 4.42218 5.41778 4.44867 5.10288 4.88953C3.91146 6.55752 3.65611 8.59101 4.59848 10.1889C5.40484 11.5563 6.55782 13.1939 8.13176 14.7678C9.8361 16.4722 11.7658 17.8338 13.3707 18.8133C15.0244 19.8226 17.1458 19.6262 18.8331 18.421C19.2151 18.1481 19.2381 17.5885 18.8797 17.2852L16.5176 15.2866L13.596 17.0395C13.2867 17.2251 12.9014 17.2297 12.5877 17.0516C11.4394 16.3995 10.0972 15.2866 8.98119 14.1706C8.41772 13.6071 7.89481 13.0259 7.46941 12.4793C7.05585 11.9479 6.68983 11.3931 6.49303 10.8886C6.38055 10.6003 6.40792 10.2761 6.56716 10.0107L8.32014 7.08906L6.4135 4.83576Z"
+                  fill="white"
+                />
+              </svg>
+              <a class="ml-2" href="tel:+989134462877">(+98) 913-4462877</a>
+            </div>
+            <div class="flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 2.775C15 2.775 15.36 2.78625 16.5458 2.84025C17.2593 2.84867 17.9662 2.97984 18.6353 3.228C19.1237 3.40832 19.5656 3.69588 19.9283 4.0695C20.3019 4.43218 20.5894 4.87402 20.7698 5.3625C21.0179 6.0316 21.1491 6.73841 21.1575 7.452C21.2115 8.64 21.225 9 21.225 12C21.225 15 21.2138 15.36 21.1598 16.5458C21.1513 17.2593 21.0202 17.9662 20.772 18.6353C20.5847 19.1202 20.2981 19.5606 19.9305 19.9282C19.5629 20.2958 19.1225 20.5825 18.6375 20.7698C17.9684 21.0179 17.2616 21.1491 16.548 21.1575C15.3623 21.2115 15.006 21.2228 12.0023 21.2228C8.9985 21.2228 8.64225 21.2115 7.4565 21.1575C6.74291 21.1491 6.0361 21.0179 5.367 20.7698C4.87852 20.5894 4.43668 20.3019 4.074 19.9282C3.70038 19.5656 3.41282 19.1237 3.2325 18.6353C2.98434 17.9662 2.85317 17.2593 2.84475 16.5458C2.7885 15.36 2.775 15.0037 2.775 12C2.775 8.99625 2.78625 8.64 2.84025 7.45425C2.84867 6.74066 2.97984 6.03385 3.228 5.36475C3.40898 4.87606 3.69731 4.4342 4.07175 4.07175C4.43443 3.69813 4.87627 3.41057 5.36475 3.23025C6.03385 2.98209 6.74066 2.85092 7.45425 2.8425C8.64 2.7885 9 2.775 12 2.775ZM12 0.75C8.9445 0.75 8.56125 0.76275 7.362 0.8175C6.42842 0.83728 5.5049 1.01478 4.6305 1.3425C3.88032 1.62483 3.20059 2.06707 2.6385 2.6385C2.06626 3.20037 1.62324 3.88012 1.34025 4.6305C1.01253 5.5049 0.83503 6.42842 0.81525 7.362C0.76275 8.56125 0.75 8.9445 0.75 12C0.75 15.0555 0.76275 15.4388 0.8175 16.638C0.83728 17.5716 1.01478 18.4951 1.3425 19.3695C1.62549 20.1199 2.06851 20.7996 2.64075 21.3615C3.20262 21.9337 3.88237 22.3768 4.63275 22.6597C5.50715 22.9875 6.43067 23.165 7.36425 23.1847C8.56425 23.2395 8.94675 23.2523 12.0023 23.2523C15.0578 23.2523 15.441 23.2395 16.6403 23.1847C17.5738 23.165 18.4974 22.9875 19.3718 22.6597C20.1188 22.3702 20.7972 21.928 21.3638 21.3615C21.9303 20.795 22.3724 20.1165 22.662 19.3695C22.9897 18.4951 23.1672 17.5716 23.187 16.638C23.2418 15.438 23.2545 15.0555 23.2545 12C23.2545 8.9445 23.2418 8.56125 23.187 7.362C23.1672 6.42842 22.9897 5.5049 22.662 4.6305C22.379 3.88012 21.936 3.20037 21.3638 2.6385C20.8019 2.06626 20.1221 1.62324 19.3718 1.34025C18.4974 1.01253 17.5738 0.83503 16.6403 0.81525C15.4388 0.76275 15.0555 0.75 12 0.75Z"
+                  fill="white"
+                />
+                <path
+                  d="M12 6.2251C10.8578 6.2251 9.74125 6.5638 8.79156 7.19836C7.84187 7.83293 7.10167 8.73486 6.66457 9.7901C6.22748 10.8453 6.11311 12.0065 6.33594 13.1267C6.55877 14.247 7.10879 15.276 7.91644 16.0836C8.72408 16.8913 9.75309 17.4413 10.8733 17.6641C11.9936 17.887 13.1547 17.7726 14.21 17.3355C15.2652 16.8984 16.1671 16.1582 16.8017 15.2085C17.4363 14.2588 17.775 13.1423 17.775 12.0001C17.775 10.4685 17.1665 8.99958 16.0835 7.91656C15.0005 6.83353 13.5316 6.2251 12 6.2251ZM12 15.7501C11.2583 15.7501 10.5333 15.5302 9.91659 15.1181C9.29991 14.7061 8.81926 14.1204 8.53543 13.4352C8.2516 12.7499 8.17734 11.9959 8.32203 11.2685C8.46673 10.5411 8.82388 9.87289 9.34833 9.34845C9.87277 8.824 10.541 8.46685 11.2684 8.32215C11.9958 8.17746 12.7498 8.25172 13.435 8.53555C14.1203 8.81938 14.7059 9.30002 15.118 9.91671C15.53 10.5334 15.75 11.2584 15.75 12.0001C15.75 12.9947 15.3549 13.9485 14.6516 14.6517C13.9484 15.355 12.9945 15.7501 12 15.7501Z"
+                  fill="white"
+                />
+                <path
+                  d="M18.0053 7.34478C18.7509 7.34478 19.3553 6.74036 19.3553 5.99478C19.3553 5.24919 18.7509 4.64478 18.0053 4.64478C17.2597 4.64478 16.6553 5.24919 16.6553 5.99478C16.6553 6.74036 17.2597 7.34478 18.0053 7.34478Z"
+                  fill="white"
+                /></svg
+              ><a class="ml-2" href="http://">@Marshian03</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 xl:col-span-2">
+          <div class="flex flex-col justify-between h-full">
+            <div>
+              <p class="text-3xl md:text-4xl font-semibold text-[#121127] mb-5">
+                Send us a Message
+              </p>
+            </div>
+            <form class="flex flex-col justify-between h-full" action="">
+              <div class="grid lg:grid-cols-2 gap-5">
+                <div>
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Your Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Email Address*</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="John@gmail.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="tel"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Phone Number*</label
+                  >
+                  <input
+                    type="tel"
+                    id="tel"
+                    class="white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="+98 913 420 9658"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="subject"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    class="white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="Type here"
+                  />
+                </div>
+                <div class="lg:col-span-2">
+                  <label
+                    for="message"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Message*</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="10"
+                    class="block white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="Type here..."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="mt-5 text-white bg-black hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-lg text-sm w-full sm:w-auto px-16 py-3 text-center"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <!--Main layout-->
     <!--Footer-->
@@ -169,7 +335,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../../index.html"
               data-te-nav-link-ref
               >Home</a
             >
@@ -177,7 +343,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../projects/"
               data-te-nav-link-ref
               >Projects</a
             >
@@ -185,7 +351,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../our-team/"
               data-te-nav-link-ref
               >Our Team</a
             >
@@ -201,7 +367,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../../index.html#about_me"
               data-te-nav-link-ref
               >About Me</a
             >
@@ -209,7 +375,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../work-with-us/"
               data-te-nav-link-ref
               >Work with Us</a
             >
@@ -217,7 +383,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../join-our-team/"
               data-te-nav-link-ref
               >Join our Team</a
             >
@@ -378,7 +544,7 @@
     </footer>
     <!--Footer-->
     <!-- External Script -->
-    <script src="js/script.js"></script>
+    <script src="../../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
