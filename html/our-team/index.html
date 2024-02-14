@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,7 +38,7 @@
   </head>
   <body class="mx-auto bg-white font-worksans">
     <!--Main Navigation-->
-    <header class="">
+    <header>
       <!-- Navigation bar -->
       <nav
         class="fixed z-10 flex w-full flex-nowrap items-center justify-between 2xl:px-[10%] bg-white/60 backdrop-blur-md backdrop-opacity-90 py-2 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
@@ -94,9 +94,9 @@
                 data-te-nav-item-ref
               >
                 <a
-                  class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
-                  href="#"
+                  href="../../index.html"
                   data-te-nav-link-ref
                   >Home</a
                 >
@@ -108,7 +108,7 @@
               >
                 <a
                   class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  href="#"
+                  href="../projects/"
                   data-te-nav-link-ref
                   >Projects</a
                 >
@@ -120,7 +120,7 @@
               >
                 <a
                   class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  href="#"
+                  href="../contact-us/"
                   data-te-nav-link-ref
                   >Contact Us</a
                 >
@@ -131,7 +131,7 @@
                 data-te-nav-item-ref
               >
                 <a
-                  class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   href="#"
                   data-te-nav-link-ref
                   >Our Team</a
@@ -141,12 +141,13 @@
             <div class="lg:pr-2">
               <div class="relative flex w-full flex-wrap items-stretch">
                 <!--Work with us button-->
-                <button
+                <a
+                  href="../work-with-us/"
                   type="button"
                   class="rounded-md bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-neutral-800 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-neutral-900 dark:shadow-[0_4px_9px_-4px_#030202] dark:hover:bg-neutral-900 dark:hover:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:focus:bg-neutral-900 dark:focus:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:active:bg-neutral-900 dark:active:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] capitalize"
                 >
                   Work with us
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -157,7 +158,150 @@
 
     <!--Main layout-->
     <main class="container mx-auto pt-[10rem]">
-      <p>Our Team</p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-10 mx-3 md:mx-5 lg:mx-20"
+      >
+        <div class="col-span-1 xl:col-span-2 text-left">
+          <div>
+            <p class="text-black text-4xl font-semibold">
+              Meet our Professional team
+            </p>
+          </div>
+          <div class="my-8">
+            <p class="text-black text-xl">
+              You can hire, work, & consult easily with us through this site.
+            </p>
+          </div>
+          <div>
+            <a class="text-[#017FBC] text-xs" href="../contact-us/"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
+        <div class="col-span-1 xl:col-span-3">
+          <div class="grid xl:grid-cols-2 gap-8 h-full">
+            <div class="py-3 px-4 md:px-8 bg-white shadow-3 rounded-2xl">
+              <div class="text-center flex items-center">
+                <img
+                  src="../../images/arshia-nasiri.png"
+                  class="mr-5"
+                  alt="Avatar"
+                />
+                <div>
+                  <h5 class="font-medium leading-tight text-left mb-1">
+                    Marshian03
+                  </h5>
+                  <a href="#" class="text-sm text-[#017FBC] text-left">
+                    Product Designer
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 px-4 md:px-8 bg-white shadow-3 rounded-2xl">
+              <div class="text-center flex items-center">
+                <img
+                  src="../../images/sajjad-momeni.png"
+                  class="mr-5"
+                  alt="Avatar"
+                />
+                <div>
+                  <h5 class="font-medium leading-tight text-left mb-1">
+                    Sajjad Momeni
+                  </h5>
+                  <a href="#" class="text-sm text-[#017FBC] text-left">
+                    Full-Stack Developer
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 px-4 md:px-8 bg-white shadow-3 rounded-2xl">
+              <div class="text-center flex items-center">
+                <img
+                  src="../../images/saman-karchegani.png"
+                  class="mr-5"
+                  alt="Avatar"
+                />
+                <div>
+                  <h5 class="font-medium leading-tight text-left mb-1">
+                    Saman Karchegani
+                  </h5>
+                  <a href="#" class="text-sm text-[#017FBC] text-left">
+                    Front-End Developer
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 px-4 md:px-8 bg-white shadow-3 rounded-2xl">
+              <div class="text-center flex items-center">
+                <img
+                  src="../../images/fateme-safi.png"
+                  class="mr-5"
+                  alt="Avatar"
+                />
+                <div>
+                  <h5 class="font-medium leading-tight text-left mb-1">
+                    Fateme Safi
+                  </h5>
+                  <a href="#" class="text-sm text-[#017FBC] text-left">
+                    Back-End Developer
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 px-4 md:px-8 bg-white shadow-3 rounded-2xl">
+              <div class="text-center flex items-center">
+                <img
+                  src="../../images/ali-khavari.png"
+                  class="mr-5"
+                  alt="Avatar"
+                />
+                <div>
+                  <h5 class="font-medium leading-tight text-left mb-1">
+                    Ali Khavari
+                  </h5>
+                  <a href="#" class="text-sm text-[#017FBC] text-left">
+                    App Developer
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 px-4 md:px-8 bg-white shadow-3 rounded-2xl">
+              <div class="text-center flex items-center">
+                <img
+                  src="../../images/matin-nejatbakhsh.png"
+                  class="mr-5"
+                  alt="Avatar"
+                />
+                <div>
+                  <h5 class="font-medium leading-tight text-left mb-1">
+                    Matin Nejatbakhsh
+                  </h5>
+                  <a href="#" class="text-sm text-[#017FBC] text-left">
+                    Back-End Developer
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 px-4 md:px-8 bg-white shadow-3 rounded-2xl">
+              <div class="text-center flex items-center">
+                <img
+                  src="../../images/hoda-mahdi.png"
+                  class="mr-5"
+                  alt="Avatar"
+                />
+                <div>
+                  <h5 class="font-medium leading-tight text-left mb-1">
+                    Hoda Mahdi
+                  </h5>
+                  <a href="#" class="text-sm text-[#017FBC] text-left">
+                    Graphic Designer
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!--Main layout-->
     <!--Footer-->
@@ -169,7 +313,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../../index.html"
               data-te-nav-link-ref
               >Home</a
             >
@@ -177,7 +321,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../projects/"
               data-te-nav-link-ref
               >Projects</a
             >
@@ -193,7 +337,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../contact-us/"
               data-te-nav-link-ref
               >Contact Us</a
             >
@@ -201,7 +345,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../../index.html#about_me"
               data-te-nav-link-ref
               >About Me</a
             >
@@ -209,7 +353,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../work-with-us/"
               data-te-nav-link-ref
               >Work with Us</a
             >
@@ -217,7 +361,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../join-our-team/"
               data-te-nav-link-ref
               >Join our Team</a
             >
@@ -378,7 +522,7 @@
     </footer>
     <!--Footer-->
     <!-- External Script -->
-    <script src="js/script.js"></script>
+    <script src="../../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
