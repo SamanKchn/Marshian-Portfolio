@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,7 +38,7 @@
   </head>
   <body class="mx-auto bg-white font-worksans">
     <!--Main Navigation-->
-    <header class="">
+    <header>
       <!-- Navigation bar -->
       <nav
         class="fixed z-10 flex w-full flex-nowrap items-center justify-between 2xl:px-[10%] bg-white/60 backdrop-blur-md backdrop-opacity-90 py-2 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
@@ -94,9 +94,9 @@
                 data-te-nav-item-ref
               >
                 <a
-                  class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                   aria-current="page"
-                  href="#"
+                  href="../../index.html"
                   data-te-nav-link-ref
                   >Home</a
                 >
@@ -108,7 +108,7 @@
               >
                 <a
                   class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  href="#"
+                  href="../projects/"
                   data-te-nav-link-ref
                   >Projects</a
                 >
@@ -120,7 +120,7 @@
               >
                 <a
                   class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  href="#"
+                  href="../contact-us/"
                   data-te-nav-link-ref
                   >Contact Us</a
                 >
@@ -132,7 +132,7 @@
               >
                 <a
                   class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                  href="#"
+                  href="../our-team/"
                   data-te-nav-link-ref
                   >Our Team</a
                 >
@@ -141,12 +141,13 @@
             <div class="lg:pr-2">
               <div class="relative flex w-full flex-wrap items-stretch">
                 <!--Work with us button-->
-                <button
+                <a
+                  href="../work-with-us/"
                   type="button"
                   class="rounded-md bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-neutral-800 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-neutral-900 dark:shadow-[0_4px_9px_-4px_#030202] dark:hover:bg-neutral-900 dark:hover:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:focus:bg-neutral-900 dark:focus:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:active:bg-neutral-900 dark:active:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] capitalize"
                 >
                   Work with us
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -157,7 +158,122 @@
 
     <!--Main layout-->
     <main class="container mx-auto pt-[10rem]">
-      <p>Join our Team</p>
+      <div class="grid grid-cols-1 gap-10 mx-3 md:mx-5 lg:mx-20">
+        <div class="relative col-span-1 mx-auto w-full">
+          <img
+            class="relative rounded-xl h-full object-cover w-full"
+            src="../../images/join-our-team.png"
+            alt="join-our-team"
+          />
+          <div class="absolute top-[22%] left-[0%] 2xl:left-[3%] text-white">
+            <div class="hidden md:block">
+              <p class="text-6xl font-medium text-white text-center">
+                Join our Team
+              </p>
+            </div>
+            <div class="w-[80%] mx-auto hidden md:block">
+              <p class="py-5 text-xl text-white text-center">
+                If you are interested in joining our team, please reserve time
+                via the button below or fill out the form below so we can
+                contact you.
+              </p>
+            </div>
+            <div class="text-center hidden xl:block">
+              <button
+                type="submit"
+                class="mt-5 font-medium text-black bg-white hover:bg-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-400 font-medium rounded-lg text-sm w-full sm:w-auto px-16 py-3 text-center"
+              >
+                Reserve a Time
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <div class="flex flex-col justify-between h-full">
+            <form class="flex flex-col justify-between h-full" action="">
+              <div class="grid lg:grid-cols-2 gap-5">
+                <div>
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Your Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Email Address*</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="John@gmail.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="tel"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Phone Number*</label
+                  >
+                  <input
+                    type="tel"
+                    id="tel"
+                    class="white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="+98 913 420 9658"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="company"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Field of Activity*</label
+                  >
+                  <input
+                    type="text"
+                    id="company"
+                    class="white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="Type here"
+                    required
+                  />
+                </div>
+                <div class="lg:col-span-2">
+                  <label
+                    for="describe"
+                    class="block mb-2 text-sm font-bold text-black"
+                    >Describe your Project*</label
+                  >
+                  <textarea
+                    id="describe"
+                    rows="10"
+                    class="block white border border-[#5C5C5C] text-[#888888] text-xs rounded-lg block w-full p-4"
+                    placeholder="Type here..."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="mt-5 text-white bg-black hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-500 font-medium rounded-lg text-sm w-full sm:w-auto px-16 py-3 text-center"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <!--Main layout-->
     <!--Footer-->
@@ -169,7 +285,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../../index.html"
               data-te-nav-link-ref
               >Home</a
             >
@@ -177,7 +293,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../projects/"
               data-te-nav-link-ref
               >Projects</a
             >
@@ -185,7 +301,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../our-team/"
               data-te-nav-link-ref
               >Our Team</a
             >
@@ -193,7 +309,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../contact-us/"
               data-te-nav-link-ref
               >Contact Us</a
             >
@@ -201,7 +317,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../../index.html#about_me"
               data-te-nav-link-ref
               >About Me</a
             >
@@ -209,7 +325,7 @@
           <div>
             <a
               class="p-0 text-white transition duration-200 hover:text-neutral-300 hover:ease-in-out focus:text-neutral-400 disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90"
-              href="#"
+              href="../work-with-us/"
               data-te-nav-link-ref
               >Work with Us</a
             >
@@ -378,7 +494,7 @@
     </footer>
     <!--Footer-->
     <!-- External Script -->
-    <script src="js/script.js"></script>
+    <script src="../../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
